@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.card{
+text-align: center;
+border-radius:4px ;
+margin-left: 30px;
+}
+.card img:hover{
+    width: 320px;
+    height: 320px;
+    border: 4px rgb(62, 128, 78) solid;
+}
+
+
+
+audio{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width:240px;
+}
+
+.deck{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    justify-content: center;
+    margin-left: 32px;
+}
+
+footer{
+    background-color: rgb(73, 73, 73);
+    position: fixed;
+    left: 700px;
+    bottom: 0;
+    z-index: 1000;
+    width: 500px;
+    text-align: center;
+}
+footer button{
+    border-radius:100% ;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}

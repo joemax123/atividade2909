@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <h1 style="color: rgb(224, 224, 224);">Sua Playlist:</h1>
+    
+    <audio id="meuaudio"></audio>
+
+    <div class="deck">
+        <div class="card">
+            <img src="../img/1.jpg" onclick="musica('Another One Bites The Dust', '/musica/1.mp3')" alt="">
+        </div>
+
+        <div class="card">
+        
+            <img src="../img/2.jpg" onclick="musica('Killer Queen', '/musica/2.mp3')" alt="">
+        </div>
+
+        <div class="card">
+            <img src="../img/3.jpg" onclick="musica('Bohemian Rhapsody', '/musica/3.mp3')" alt="">
+        </div>
+
+        <div class="card">
+            <img src="../img/4.jpg" onclick="musica('Great Pretender', '/musica/4.mp3')" alt="">
+        </div>
+
+        <div class="card">
+            <img src="../img/5.jpg" onclick="musica('Radio GaGa', '/musica/5.mp3')" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="controle">
+            <p id="nomeMusica" style="color: white;">Selecione uma música</p>
+            
+            <button id="voltar">◀◀</button>
+            <button id="btnPlayPause">▶ Play</button>
+            <button id="proximo">▶▶</button>
+            
+            <span id="tempoAtual" style="color: white;">0:00</span>
+            <input type="range" id="barraprogresso" value="0" min="0" step="0.1">
+            <span id="tempoTotal" style="color: white;">0:00</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
